@@ -1,8 +1,8 @@
 const key ='b568fde1c4b43d114514fa9e8c968456';
-const API = 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=b568fde1c4b43d114514fa9e8c968456';
+const API = 'http://ws.audioscrobbler.com/2.0/?method=album.getinfo';
 
 const getAlbum = async (album, artist) => {
-    const apiURL =`${API}&artist=${artist}&album=${album}&format=json`;
+    const apiURL =`${API}&api_key${key}&artist=${artist}&album=${album}&format=json`;
 
     try {
         const response = await fetch(apiURL);
