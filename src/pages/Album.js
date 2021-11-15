@@ -21,7 +21,7 @@ const Album =  async () => {
                 
             </article>
             <article class="Albums-card">
-            <h3>Name: <span>${album.album.artist}</span></h3>
+            <h3>Name Artist: <span>${album.album.artist}</span></h3>
             <h3>Url: <span>${album.album.url}</span></ </h3>
             <h3>Cantidad reproducciones: <span>${album.album.playcount}</span></ </h3>
             
