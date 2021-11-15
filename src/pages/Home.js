@@ -4,7 +4,7 @@ const Home =  async () => {
     const user = await gettopalbums();
    
     const view =  `
-        <div class="Characters">
+        <div class="Albums">
         ${user.topalbums.album.map(album => `
         <article class="Character-item">
             <a href="#/${album.name}-${album.artist.name}/">

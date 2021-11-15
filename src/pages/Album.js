@@ -13,14 +13,14 @@ const Album =  async () => {
     console.log( album);
 
     const view = `
-        <div class="Characters-inner">
-            <article class="Character-card">
+        <div class="Albums-inner">
+            <article class="Albums-card">
                 
                 <h2>${album.album.name}</h2>
                 <img src="${album.album.image[3]["#text"]}" alt="${album.album.name}" />
                 
             </article>
-            <article class="Characters-card">
+            <article class="Albums-card">
             <h3>Name: <span>${album.album.artist}</span></h3>
             <h3>Url: <span>${album.album.url}</span></ </h3>
             <h3>Cantidad reproducciones: <span>${album.album.playcount}</span></ </h3>
